@@ -3,7 +3,7 @@ diamKER kernel
 
 This Kernel is developed by diam Systems for use in diam Operating Systems such as, diamOS (Starting from diamOS Cruel Summer)
 
-//diamKER is currently in Alpha.
+diamKER is currently in Alpha.
 
 diamKER is based upon Linux so the build instructions and basic project file directories are the same.
 
