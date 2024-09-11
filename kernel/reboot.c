@@ -279,7 +279,7 @@ void kernel_restart(char *cmd)
 	migrate_to_reboot_cpu();
 	syscore_shutdown();
 	if (!cmd)
-		pr_emerg("Restarting system\n");
+		pr_emerg("Restarting system.. Please be patient or some shit like that. i really dont know at this point.\n");
 	else
 		pr_emerg("Restarting system with command '%s'\n", cmd);
 	kmsg_dump(KMSG_DUMP_SHUTDOWN);
@@ -306,9 +306,9 @@ void kernel_halt(void)
 	migrate_to_reboot_cpu();
 	syscore_shutdown();
 	if (poweroff_fallback_to_halt)
-		pr_emerg("Power off not available: System halted instead\n");
+		pr_emerg("Power off not available: System halted instead. HA!\n");
 	else
-		pr_emerg("System halted\n");
+		pr_emerg("System halted. :(\n");
 	kmsg_dump(KMSG_DUMP_SHUTDOWN);
 	machine_halt();
 }
@@ -853,7 +853,7 @@ static int __orderly_reboot(void)
 	ret = run_cmd(reboot_cmd);
 
 	if (ret) {
-		pr_warn("Failed to start orderly reboot: forcing the issue\n");
+		pr_warn("Failed to start orderly reboot: forcing the issue. oh also, this kernel is NOT LINUX. its diamKER :)\n");
 		emergency_sync();
 		kernel_restart(NULL);
 	}
