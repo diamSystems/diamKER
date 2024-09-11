@@ -1,9 +1,10 @@
 # SPDX-License-Identifier: GPL-2.0
-VERSION = 6
-PATCHLEVEL = 11
+#Here is the code for the Kernel Version. 
+VERSION = 1
+PATCHLEVEL = 0
 SUBLEVEL = 0
-EXTRAVERSION = -rc7
-NAME = Baby Opossum Posse
+EXTRAVERSION = -alpha1
+NAME = Cruel Summer
 
 # *DOCUMENTATION*
 # To see a list of typical targets execute "make help"
