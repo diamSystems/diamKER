@@ -948,7 +948,7 @@ static void hw_failure_emergency_poweroff_func(struct work_struct *work)
 	/*
 	 * Worst of the worst case trigger emergency restart
 	 */
-	pr_emerg("Hardware protection shutdown failed. Trying emergency restart\n");
+	pr_emerg("Hardware protection shutdown failed. Trying EMERGENCY restart\n");
 	emergency_restart();
 }
 
@@ -991,7 +991,7 @@ void __hw_protection_shutdown(const char *reason, int ms_until_forced, bool shut
 {
 	static atomic_t allow_proceed = ATOMIC_INIT(1);
 
-	pr_emerg("HARDWARE PROTECTION shutdown (%s)\n", reason);
+	pr_emerg("HARDWARE PROTECTION! shutdown (%s)\n", reason);
 
 	/* Shutdown should be initiated only once. */
 	if (!atomic_dec_and_test(&allow_proceed))

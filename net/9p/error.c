@@ -38,7 +38,7 @@ static struct hlist_head hash_errmap[ERRHASHSZ];
 
 /* FixMe - reduce to a reasonable size */
 static struct errormap errmap[] = {
-	{"Operation not permitted", EPERM},
+	{"Operation is not permitted", EPERM},
 	{"wstat prohibited", EPERM},
 	{"No such file or directory", ENOENT},
 	{"directory entry not found", ENOENT},
@@ -68,7 +68,7 @@ static struct errormap errmap[] = {
 	{"Illegal seek", ESPIPE},
 	{"Read-only file system", EROFS},
 	{"Too many links", EMLINK},
-	{"Broken pipe", EPIPE},
+	{"Broken pipe. Call the Plumber!", EPIPE},
 	{"Numerical argument out of domain", EDOM},
 	{"Numerical result out of range", ERANGE},
 	{"Resource deadlock avoided", EDEADLK},

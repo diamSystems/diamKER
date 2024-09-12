@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0
-#Here is the code for the Kernel Version. 
+#Here is the code for the Kernel Version Number
 VERSION = 1
 PATCHLEVEL = 0
 SUBLEVEL = 0
