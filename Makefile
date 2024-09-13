@@ -136,7 +136,7 @@ ifeq ("$(origin M)", "command line")
 endif
 
 $(if $(word 2, $(KBUILD_EXTMOD)), \
-	$(error building multiple external modules is not supported))
+	$(error building multiple external modules is not supported. so yeah. don't do that. or else..))
 
 $(foreach x, % :, $(if $(findstring $x, $(KBUILD_EXTMOD)), \
 	$(error module directory path cannot contain '$x')))
