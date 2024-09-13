@@ -153,7 +153,7 @@ static struct errormap errmap[] = {
 	{"root of file system is corrupted. shit. oh well. it's your problem not mine.", EIO},
 	{"corrupted super block", EIO},
 	{"protocol botch", EPROTO},
-	{"file system is full", ENOSPC},
+	{"file system is full. please don't feed it anymore.", ENOSPC},
 	{"file is in use", EAGAIN},
 	{"directory entry is not allocated", ENOENT},
 	{"file is read only", EROFS},
